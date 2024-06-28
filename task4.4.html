@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function f1(){
+                const d = new Date();
+                document.getElementById("op1").innerHTML = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+            }
+            function f2(){
+                const d = new Date();
+                document.getElementById("op2").innerHTML = d.getDate()+"-"+d.getMonth()+"-"+d.getFullYear();
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="f1()">Get Time</button>
+        <h2 id="op1"></h2>
+        <button type="button" onclick="f2()">Get Date</button>
+        <h2 id="op2"></h2>
+    </body>
+</html>

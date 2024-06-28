@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function f1(){
+                var num1 = document.getElementById("inp1").value;
+                var num2 = document.getElementById("inp2").value;
+                document.getElementById("op").innerHTML =num1+"x"+num2+"="+num1*num2;
+            }
+            function f2(){
+                var num1 = document.getElementById("inp1").value;
+                var num2 = document.getElementById("inp2").value;
+                document.getElementById("op").innerHTML =num1+"/"+num2+"="+num1/num2;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            Enter Number 1 : <input type="number" id="inp1"><br>
+            Enter Number 2 : <input type="number" id="inp2"><br>
+            <button type="submit" onclick="f1()">Multiply</button>
+            <button type="submit" onclick="f2()">Divide</button>
+            <h2 id="op"></h2>
+        </div>
+    </body>
+</html>

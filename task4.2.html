@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function f1() {
+        const inputString = document.getElementById("inp").value;
+        const charArray = inputString.split('');
+        charArray.sort();
+        const sortedString = charArray.join('');
+        document.getElementById("op").innerHTML = "alphabetical order : " + sortedString;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      Enter a string : <input type="text" id="inp"><br>
+      <button type="submit" onclick="f1()">Alphabetical order</button>
+      <div id="op"></div>
+    </div>
+  </body>
+</html>
